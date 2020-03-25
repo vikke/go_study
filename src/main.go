@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net"
 
-	pb "fabric-tokyo-hermes/idl"
 	"google.golang.org/grpc"
+	pb "hermes-pub/idl"
 )
 
 const (
