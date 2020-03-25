@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package hermes;
+
+message OrderId {
+    int64 id = 1;
+    string script_name = 2;
+}
+
+message Status {
+    int32 status_code = 1;
+    string description = 2;
+}
+
+service MailSender {
+    rpc OrderCancelAtShop (OrderId) returns (Status){};
+}
+
+
